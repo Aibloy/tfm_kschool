@@ -1,0 +1,11 @@
+streamlit
+tweepy
+pandas
+matplotlib 
+numpy
+re
+Pillow
+liwc
+wordcloud
+nltk 
+scikit-learn
