@@ -59,7 +59,7 @@ Si se juntan todas las limitaciones, se puede  imaginar algo como lo siguiente:
 Todas estas limitaciones, tanto por separado como juntas suponen razones suficientes como para invalidar cualquier investigación científica seria utilizando los datos recolectados, por lo que **la finalidad de este proyecto es puramente académico y de autoaprendizaje.**
 
 ### 1.  Recolección de datos
-
+> En el presente repositorio se comparte el código utilizado pero no las bases de datos ni los diccionarios de LIWC (Bien porque no estoy autorizado a compartirlo o porque no son de dominio público)
 - Datos en Inglés: 
 
   -Reddit: Los datos en inglés fueron solicitados al Dr. Matej Gjurković y su equipo de la Universidad de Zagreb, referentes al paper  [Reddit: A Gold Mine for Personality Prediction](https://www.researchgate.net/publication/325445581_Reddit_A_Gold_Mine_for_Personality_Prediction). Donde se recoge la personalidad de 13 mil usuarios de Reddit quienes mostraron su personalidad en posts públicamente para posteriormente hacer un scrappling de dichos usuarios y recolectar sus posts. 
