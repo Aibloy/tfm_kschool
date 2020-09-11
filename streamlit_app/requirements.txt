@@ -3,10 +3,9 @@ tweepy
 pandas
 matplotlib 
 numpy
-re
+regex
 Pillow
 liwc
 wordcloud
 nltk 
 scikit-learn
-pillow
