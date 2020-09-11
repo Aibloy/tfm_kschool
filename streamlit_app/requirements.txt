@@ -8,3 +8,4 @@ Pillow
 liwc
 wordcloud
 scikit-learn
+lightgbm
