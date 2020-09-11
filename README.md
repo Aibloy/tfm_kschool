@@ -2,7 +2,7 @@
 
 TFM K-School by William Sanz Vivanco
 
-## 1. Streamlit app:
+##  Streamlit app:
 https://tfm-kschool-williamsanz.herokuapp.com/
 
 
