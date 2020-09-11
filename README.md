@@ -8,9 +8,6 @@ https://tfm-kschool-williamsanz.herokuapp.com/
 
 ![image](images/img3.jpg)
 
-
-![image](images/img4.jpg)
-
 ### Citation: 
 
 - Verhoeven, B., Daelemans, W., & Plank, B. (2016) *TwiSty: a multilingual Twitter Stylometry corpus for gender and personality profiling*. In: Proceedings of the 10th International Conference on Language Resources and Evaluation (LREC 2016). Portorož, Slovenia.
