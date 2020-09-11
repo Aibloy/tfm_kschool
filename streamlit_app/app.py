@@ -22,14 +22,14 @@ from Utilities.LIWC_EN  import LIWC_ENGLISH
 from sklearn.feature_extraction.text import CountVectorizer
 from wordcloud import WordCloud
 
-from nltk.corpus import stopwords 
-stop_words = list(set(stopwords.words('english'))) + ["enlace","mencion"]
-
 pd.set_option('display.max_rows', 500)
 # pd.set_option('display.width', 1000)
 #.............................................................................................................
 #.............................................................................................................
 #.............................................................................................................
+#.............................................................................................................
+with open("Utilities/stop_words.pkl","rb") as file: 
+    stop_words = pickle.load(file)
 #.............................................................................................................
 
 with open("api_keys.txt","r") as file:      #Las claves deben estar en el archivo .txt
