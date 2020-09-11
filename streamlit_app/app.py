@@ -143,7 +143,7 @@ def plot_radar(vector):
 st.sidebar.header("By William Sanz Vivanco")
 C = st.sidebar.button("GITHUB REPOSITORY")
 if C:
-    st.sidebar.markdown("[github repository](https://www.google.com/search?q=streamlit+sidbar&oq=streamlit+sidbar&aqs=chrome..69i57j0l7.2195j0j7&sourceid=chrome&ie=UTF-8)")
+    st.sidebar.markdown("[github repository](https://github.com/Aibloy/tfm_kschool)")
 I = st.button("Introduction")
 if I:
     st.header("Master thesis")
@@ -157,7 +157,7 @@ The app has been created with Streamlit, it can predict the personality based on
 
 
 Select the way that you will use for get the data, you can writte it manually or export data from Twitter 
-specified a user account
+specifying a user account
 """)
     R = st.button("Hide Introduction")
     if R:
