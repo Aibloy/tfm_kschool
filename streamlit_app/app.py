@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Aug 28 12:27:48 2020
-
 @author: Willi
 """
 
@@ -22,16 +21,17 @@ from Utilities.LIWC_EN  import LIWC_ENGLISH
 from sklearn.feature_extraction.text import CountVectorizer
 from wordcloud import WordCloud
 
+
+
 pd.set_option('display.max_rows', 500)
 # pd.set_option('display.width', 1000)
 #.............................................................................................................
 #.............................................................................................................
 #.............................................................................................................
 #.............................................................................................................
-with open("Utilities/stop_words.pkl","rb") as file: 
+with open("Utilities/stop_words.pkl","rb") as file:
     stop_words = pickle.load(file)
 #.............................................................................................................
-
 with open("api_keys.txt","r") as file:      #Las claves deben estar en el archivo .txt
     for line in file:
         exec(line)
@@ -115,7 +115,7 @@ def create_wordcloud(text):
 #.............................................................................................................
 def plot_radar(vector):
     "ipfnejts"
-    vector = [vector[1],vector[7],vector[4],vector[2],vector[0],vector[6],vector[5],vector[3]] # Ordenar vector manualmente para que encaje con la salida del modelo
+    vector = [vector[1]-0.1,vector[7]+0.1,vector[4],vector[2],vector[0]+0.1,vector[6]-0.1,vector[5],vector[3]] # Ordenar vector manualmente para que encaje con la salida del modelo
     df = pd.DataFrame({'type': "INTROVERSION PERCEIVING FEELING INTUITION EXTROVERSION JUDGING THINKING SENSING".title().split(),
                    'value':vector})
     fig = plt.figure(figsize=(8, 8))
@@ -150,12 +150,8 @@ if I:
     
     st.markdown("""
 This project is part of my master's project in Data Science at K-School
-
 The app has been created with Streamlit, it can predict the personality based on the MBTI model 
-
 **¿How to use it?**
-
-
 Select the way that you will use for get the data, you can writte it manually or export data from Twitter 
 specifying a user account
 """)
@@ -169,15 +165,10 @@ if I:
     st.image(Image.open("Utilities/mbti_image.png"))
     st.markdown("""
 The Myers Briggs Type Indicator (or MBTI for short) is a personality type model that divides the personality in four dimensions:
-
 > **Introversion (I) – Extroversion (E)**
-
 > **Intuition (N) – Sensing (S)**
-
 > **Thinking (T) – Feeling (F)**
-
 > **Judging (J) – Perceiving (P)**
-
 Each dimension tries to explain the way a person processes their life. In order:
 - how we interact with our surroundings
 - how we see the world and process information
@@ -239,7 +230,7 @@ if origen == d[1]:  # WRITTE MANUALLY
         clean_corpus = clean_text_english(entrada)
         
 if clean_corpus!=None:
-    st.header(f"**{entrada.upper()}** MBTI PERSONALITY TYPE")
+    st.header("MBTI PERSONALITY TYPE")
     create_wordcloud(clean_corpus)
     vector = get_personality(clean_corpus)
     tipo = plot_radar(vector)
@@ -261,7 +252,6 @@ if clean_corpus!=None:
         if st.button("¿What is LIWC?"):
             st.write("""
 The way that the Linguistic Inquiry and Word Count (LIWC) program works is fairly simple. Basically, it reads a given text and counts the percentage of words that reflect different emotions, thinking styles, social concerns, and even parts of speech. 
-
 Because LIWC was developed by researchers with interests in social, clinical, health, and cognitive psychology, the language categories were created to capture people’s social and psychological states.
                          """)
             st.markdown("Oficial Website: http://liwc.wpengine.com")
@@ -274,4 +264,3 @@ Because LIWC was developed by researchers with interests in social, clinical, he
             categories_selected = st.multiselect("Select features", liwc_features)
                 
             st.write(LIWC_filtrado[LIWC_filtrado["index"].isin(categories_selected)])
-    
