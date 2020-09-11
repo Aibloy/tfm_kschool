@@ -9,3 +9,4 @@ liwc
 wordcloud
 nltk 
 scikit-learn
+pillow
