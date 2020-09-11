@@ -7,5 +7,4 @@ regex
 Pillow
 liwc
 wordcloud
-nltk 
 scikit-learn
