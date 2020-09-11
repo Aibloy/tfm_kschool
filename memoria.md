@@ -46,11 +46,11 @@ Por lo que puede ser planteado de 3 formas distintas:
 
   Por último cabe mencionar el alto desbalance de los datos, para los 16 tipos de personalidad:
 
-  ![image](images/img1.PNG)
+![image](images/img1.PNG)
 
   Y para cada dimensión, encontrandose el mayor desbalance entre introversión y extraversión, siendo el primer tipo mas de 3 veces más grande que el primero (3,11 aprox):
 
- ![image](images/img2.PNG)
+![image](images/img2.PNG)
 
 Si se juntan todas las limitaciones, se puede  imaginar algo como lo siguiente: 
 
